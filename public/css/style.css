@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.loginbody{
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('../images/chatroombg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+.login_form{
+    background: #ffffff;
+    padding: 20px 30px;
+    margin:80px auto;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+/* .login_form > button{
+margin-top: 20px;
+} */
+.login_form > div{
+margin-bottom: 10px;
+}
+.main{
+    display: flex;
+}
+.sidebar{
+    width: 350px;
+    height: 100vh;
+    background: #f06445;
+    padding: 30px;
+    position: relative;
+    transition: .3s;
+}
+.heading{
+    color: #ffffff;
+}
+.userCount{
+    color: #fff;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.total_count{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.3rem;
+    text-align: center;
+}
+.body{
+    position: relative;
+    width: 100%;
+}
+.topbar{
+    background-color: #f06445;
+    padding:20px;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    border-left:1px solid #ffffff;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.ham{
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+.chatbody{
+    position: relative;
+    height: 100%;
+    max-height: 100vh;
+    height: 100vh;
+}
+.chats{
+    padding:100px 20px 50px 20px;
+    background: #f9f9f9;
+    height: 100%;
+    overflow-y: auto;
+}
+.msgbox{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    background-color: #f06445;
+    padding: 10px;
+    border-left:1px solid #ffffff;
+}
+.sendmsg{
+    width: 80%;
+}
+.sendbtn{
+    width: 20%;
+}
+.msgrow{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.msgouter{
+    position: relative;
+    max-width: 300px;
+    width: max-content;
+}
+.text{
+    padding: 30px;
+    border-radius: 5px;
+    background: #fff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1);
+    margin: 15px 0;
+    width: 100%;
+    word-wrap: break-word;
+    border: 1px solid gray;
+}
+.popup{
+    padding: 10px;
+    border-radius: 5px;
+    background: #f06445;
+    color: #fff;
+    width: 200px;
+    text-align: center;
+    margin: 15px auto;
+}
+
+.user_text{
+    justify-content: flex-end;
+}
+
+.msgusername{
+position: absolute;
+left: 5%;
+top: 20%;
+color: #000000;
+font-weight: bold;
+font-size: 12px;
+padding:5px;
+}
+
+@media only screen and (max-width:700px) {
+    .sidebar{
+        position: absolute;
+        left: -300px;
+    }
+}

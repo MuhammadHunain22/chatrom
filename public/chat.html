@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Chatroom</title>
+  </head>
+  <body style="height: 100vh!important;">
+
+        <div class="main">
+          <div class="sidebar">
+           <h3 class="heading">
+            All Users Name
+           </h3> 
+           <ol class="userCount">
+           </ol>
+
+           <div class="total_count">
+
+           </div>
+          </div>
+            <div class="body">
+                <div class="topbar">
+                    Chatroom
+                    <div class="ham">
+                      ☰
+                    </div>
+                </div>
+
+                <div class="chatbody">
+                    <div class="chats">
+
+                    </div>
+                     <div class="msgbox">
+                    <form style="display: flex; width: 100%;" class="msgform">
+                        <input type="text" class="sendmsg form-control" placeholder="Write Your Message" name="sendmsg"> 
+                        <button type="submit" class="sendbtn btn btn-primary">Send</button>
+                    </form>
+                     </div> 
+                </div>
+
+            </div>
+        </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
