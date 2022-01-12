@@ -63,3 +63,7 @@ socket.on('allusers',users => {
 
     document.querySelector('.total_count').innerHTML =`Total Users Connected ${count}`
 })
+
+document.querySelector('.ham').addEventListener('click',() => {
+    document.querySelector('.sidebar').classList.toggle('active')
+})

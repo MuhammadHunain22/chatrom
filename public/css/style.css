@@ -72,6 +72,7 @@ margin-bottom: 10px;
 .ham{
     font-size: 1.7rem;
     cursor: pointer;
+    display: none;
 }
 .chatbody{
     position: relative;
@@ -148,10 +149,13 @@ padding:5px;
 @media only screen and (max-width:700px) {
     .sidebar{
         position: absolute;
-        left: -300px;
-        height: 90vh;
+        left: -350px;
+        z-index: 999999;
     }
-    .body{
-        height: 90vh;
+    .active{
+        left: 0!important;
+    }
+    .ham{
+        display: block;
     }
 }
