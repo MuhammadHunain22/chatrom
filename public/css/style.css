@@ -149,7 +149,8 @@ padding:5px;
 @media only screen and (max-width:700px) {
     .sidebar{
         position: absolute;
-        left: -350px;
+        width: 80%;
+        left: -80%;
         z-index: 999999;
     }
     .active{
